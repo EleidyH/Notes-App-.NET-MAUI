@@ -7,7 +7,7 @@
              x:DataType="models:AllNotes">
     <!-- Add an item to the toolbar -->
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Clicked="Add_Clicked" IconImageSource="{FontImageSource Glyph='+', Color=Black, Size=22}" />
+        <ToolbarItem Text="Add" Clicked="Add_Clicked" IconImageSource="{FontImageSource Glyph='+', Color=White, Size=45}"/>
     </ContentPage.ToolbarItems>
     
     <!-- Display notes in a list -->
@@ -25,8 +25,8 @@
         <!-- Define the appearance of each item in the list -->
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="models:Note">
-                <StackLayout>
-                    <Label Text="{Binding Text}" FontSize="22" />
+                <StackLayout BackgroundColor="#695947" Padding="20">
+                    <Label Text="{Binding Text}" FontSize="22"/>
                     <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
                 </StackLayout>
             </DataTemplate>
