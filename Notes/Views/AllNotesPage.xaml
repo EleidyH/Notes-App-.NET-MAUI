@@ -25,7 +25,7 @@
         <!-- Define the appearance of each item in the list -->
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="models:Note">
-                <StackLayout BackgroundColor="#695947" Padding="20">
+                <StackLayout BackgroundColor="#A2998D" Padding="20">
                     <Label Text="{Binding Text}" FontSize="22"/>
                     <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
                 </StackLayout>
